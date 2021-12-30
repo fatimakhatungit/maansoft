@@ -1,0 +1,116 @@
+/*-------------------------------------------------------
+21. Footer css 
+---------------------------------------------------------*/
+
+footer {
+	background-color: var(--clr-ftr);
+}
+
+.f-cs {
+   .g-5, .gx-5 {
+        --bs-gutter-x: 6rem;
+    } 
+}
+
+.footer-widget-title {
+    color: var(--clr-white);
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 0.0015em;
+    margin-bottom: 2.5rem;
+}
+
+//Footer About
+
+.footer-widget-box.about-us {
+    padding-right: 12rem;
+    p {
+        margin-bottom: 2.5rem;
+        color: var(--clr-white);
+    }
+}
+
+
+//Quick Links
+
+.footer-list {
+	li {
+        margin-bottom: 1rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+		a {
+			color: var(--clr-white);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: 0.005em;
+            &:hover {
+                color: var(--clr-def);
+            }
+		}
+	}
+}
+
+//Subscribe
+
+.f-contact {
+    p {
+        color: var(--clr-white);
+    }
+}
+
+.footer-contact {
+    form {
+        position: relative;
+        z-index: 1;
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+//Copyright
+
+.copyright {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	padding: 3rem 0;
+    border-top: 1px solid rgba(255,255,255,.1);
+    p {
+        color: var(--clr-white);
+    }
+}
+
+.footer-social {
+	display: flex;
+	@include flex-gap (1.5rem);
+	li {
+		a {
+			i {
+                height: 4rem;
+                width: 4rem;
+                line-height: 4rem;
+                text-align: center;
+				font-size: 1.6rem;
+                background-color: rgba(255,255,255,.1);
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                transition: all .5s ease;
+                display: inline-block;
+                color: var(--clr-white);
+                &:hover {
+                    background-color: var(--clr-def);
+                }
+			}
+		}
+	}
+}
+
+.row.f-cs {
+    padding-top: 1rem;
+}
+

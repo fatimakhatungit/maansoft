@@ -1,0 +1,109 @@
+/*-------------------------------------------------------
+10. job single css 
+---------------------------------------------------------*/
+
+.site-banner {
+    background: var(--clr-def);
+   padding: 5rem 0rem;
+  }
+  .inner-addon {
+    position: relative;
+    color: #616161;
+    float: left;
+    /* margin: 0 10px 0 0; */
+    width: 100%;
+    padding: 20px 0px;
+     i {
+        position: absolute;
+        margin: 19px 0 0 10px;
+        font-size: 14px;
+      }
+       .form-control {
+        color: #000;
+        padding: 0 0 0 30px;
+      }
+  }
+  .categoryCombo select{
+    .form-control {
+        color: #595959;
+  }
+  }
+
+  .inner-style-2 {
+    height: 5rem;
+    width: 100%;
+   background-color: var(--clr-bg-2);
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    padding-left: 30px;
+  }
+
+
+/* job-single-section */
+.job-single-section {
+    padding: 8rem 0rem;
+    .job-single-wrapper {
+        background: #F0FBFF;
+        padding: 3rem;
+        border-radius: 10px;
+        margin-bottom: 3rem;
+        .job-content{
+            h2{
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 26px;
+                letter-spacing: 0.0025em;
+              }
+              span{
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                letter-spacing: 0.0025em;
+                color: #000;
+              }
+              ul{
+                  li{
+                      a{
+                        color: #000;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px;
+                        letter-spacing: 0.0025em;
+                        i{
+                            color: #29AAE1;
+                            margin-right: 1rem;
+                          }
+                      }
+                      
+                  }
+              }
+        }
+      }
+  }
+  .deadline-logo {
+    text-align: right;
+  }
+  .deadline {
+    margin-top: 10rem;
+    i{
+        margin-right: 1rem;
+        color: #F14D5D;
+    }
+  }
+  .pagination.job-pagination a{
+    background: rgba(41, 170, 225, 0.12);
+    &:hover{
+        background-color: var(--clr-def);
+        color: var(--clr-white);
+    }
+    &.active{
+        background-color: var(--clr-def);
+        color: var(--clr-white);
+    }
+  }
+
+  

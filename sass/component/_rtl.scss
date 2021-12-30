@@ -1,0 +1,174 @@
+
+
+body.rtl-mode {
+    text-align: right;
+    direction: rtl;
+}
+
+.ltl {
+	direction: ltr;
+}
+
+
+//Breadcrumb
+
+.rtl-mode {
+	//Bredcrumd
+	.site-breadcrumb {
+		.breadcrumb-menu {
+			li {
+				position: relative;
+				display: inline-block;
+				margin-left: 0;
+				color: var(--clr-white);
+				font-weight: 400;
+				text-transform: capitalize;
+				margin-right: 3rem;
+				&::before {
+					right: 50px;
+				}
+			}
+		}
+	}
+	//Search Button
+	.input-style-2 {
+		padding: 2rem 6rem 2rem 2rem;
+	}
+	//team
+	.team-area {
+		direction: ltr;
+	}
+	.team-box {
+		.team-overlay{
+				.team-bio {
+				margin-left: 3rem;
+				margin-top: 4.5rem;
+				padding-right: 3rem;
+			}
+		} 
+	}
+	@media (min-width: 992px) {
+		.navbar-brand {
+			margin-left: 3rem;
+		}
+		.navbar .nav-item .nav-link {
+			margin-left: 3rem;
+			margin-right: 0;
+		}
+	}
+	//Theme Details
+	
+	.theme-opt {
+		ul {
+			li {
+				padding-left: 0;
+				padding-right: 2rem;
+				&::before {
+					right: 0;
+					left: inherit;
+				}
+			}
+		} 
+	}
+	
+	
+	//Comunity
+	
+	.comunity-area {
+		direction: ltr;
+	}
+	
+	//Service
+
+	.sevice-area {
+		direction: ltr;
+	}
+
+	//Portfolio
+
+	div#portfolio {
+		direction: ltr;
+	}
+	
+	//Career
+	
+	.part-area.de-padding {
+		direction: ltr;
+	}
+	
+	.part-wpr {
+		direction: rtl;
+	}
+	
+	.ecp-yrr {
+		padding-left: 0;
+		padding-right: 5rem;
+	}
+	
+	.part-single {
+		.part-single-content {
+			ul {
+				li {
+					&:last-child {
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+	
+	//Blog
+	.blog-area {
+		direction: ltr;
+	}
+	
+	.blog-meta {
+		direction: rtl;
+	}
+
+	// Partner
+	.partner-area {
+		direction: ltr;
+	}
+
+	//FeedBack
+
+	.feed-area {
+		direction: ltr;
+	}
+	
+	//Course Single
+	
+	.course-syl-con-header {
+		&::before {
+			right: 0;
+		}
+	}
+	//Account
+	
+	.user-profile .profile-btn {
+		text-align: center;
+	}
+	//Button
+	
+	.btn-6 img {
+		margin-right: 0;
+		margin-left: 8px;
+	}
+	
+	//Copyright
+	
+	.copyright {
+		direction: ltr;
+	}
+}
+
+//Single PAge
+
+.share {
+	img {
+		height: inherit;
+		width: inherit;
+		border-radius: 0;
+	}
+}

@@ -1,0 +1,74 @@
+
+/*-------------------------------------------------------
+17. Price css 
+---------------------------------------------------------*/
+
+.price-box {
+    box-shadow: 0px 0px 1px 0px rgba(7, 14, 39, 0.5);
+    padding: 3rem 7rem;
+    text-align: center; 
+    .price-head { 
+        padding: 0 0 4rem 0;
+        margin-bottom: 4rem;
+        border-bottom: 1px solid rgba(7, 14, 39, .1);
+        .price-ribbon-title {
+            color: var(--clr-def);
+            margin-bottom: 4rem;
+            display: block;
+        }
+       .price-value {
+           h4 {
+                margin-bottom: 0;
+                font-size: 47px;
+                font-weight: 700;
+                line-height: 20px;
+               span {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+               }
+           }
+        } 
+    }
+    .price-info {
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2.5rem;
+            li {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.0025em;
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                margin-left: 2rem;
+                i {
+                    width: 25px;
+                    height: 25px;
+                    line-height: 25px;
+                    text-align: center;
+                    background-color: var(--clr-bg-2);
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .price-bottom {
+        margin-top: 4rem;
+    }
+}
+
+.price-ribbon-title {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 10px;
+    letter-spacing: 0.0015em; 
+}
+
+.price-image {
+    margin-bottom: 30px;
+}

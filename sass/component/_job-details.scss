@@ -1,0 +1,120 @@
+/*-------------------------------------------------------
+13. job details css 
+---------------------------------------------------------*/
+/* job details  */
+
+.site-breadcrumb.job-details {
+    background: #29AAE1;
+    &:hover{
+        display: none;
+    }
+  }
+  
+.job-single-details-section {
+    padding: 8rem 0rem;
+    .job-content {
+        margin-bottom: 2rem;
+        h2{
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: 0.0025em;
+        }
+        p{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.0025em;
+        }
+      }
+  }
+  .job-content-res{
+    margin-bottom: 2rem;
+    h2 {
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0.0025em;
+      }
+      ul{
+        li {
+            list-style: disc;
+            color: #29AAE1;
+            margin-left: 13px;
+            a{
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 0.0025em;
+                color: #343434 !important;
+            }
+        }
+      }
+  } 
+ 
+
+  .job-form {
+    background: #F5F5F5;
+    padding: 4rem;
+    h2 {
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0.0025em;
+        text-align: left;
+        color: #29AAE1;
+      }
+  }
+  
+  .input-style-4 {
+    height: 5rem;
+    padding: 2rem;
+    outline: none;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    border: 1px solid #ECECEC;
+    color: var(--clr-heading);
+    width: 100%;
+    background-color: var(--clr-white);
+  }
+  
+  .input-style-4.gendar {
+      padding: 1rem 1rem;
+  }
+  .button-style-one{
+    width: 100%;
+  }
+  .job-summary {
+    background: #EDFAFF;
+    padding: 0 0 2rem 0;
+    h2 {
+        background: #29AAE1;
+        padding: 2rem;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 0em;
+        color: #fff;
+      }
+      p {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0em;
+        padding: 0rem 2rem;
+      }
+      span {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+      }
+  }
+  

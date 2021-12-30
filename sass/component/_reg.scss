@@ -1,0 +1,253 @@
+/*-------------------------------------------------------
+17. Register css 
+---------------------------------------------------------*/
+
+.maan-user-account-section {
+    background: url(../maansoft/assets/img/login/background.png) no-repeat top center;
+    background-size: cover;
+    padding: 110px 0;
+    
+  } 
+  .maan-user-account-wraper {
+	background: rgba(255, 255, 255, 0.9);
+	// max-width: 750px;
+	margin: 0 220px;
+	padding: 30px 50px;
+	border-radius: 6px;
+    text-align: center;
+    .user-header-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            display: block;
+            img{
+                max-width: 100%;
+            }
+        }
+
+    }
+}
+.maan-swetch-btn {
+	display: block;
+	width: 250px;
+	height: 45px;
+	overflow: hidden;
+	position: relative;
+	border: none;
+    .login-btn{
+            display: block;
+        position: absolute;
+        width: 110px;
+        height: 45px;
+        overflow: hidden;
+        line-height: 45px;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 28px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        color: #545454;
+        background: #fff;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        &.active{
+            color: #fff;
+        background: #E8004F;
+        }
+        }
+   
+}
+.maan-btn{
+    &.hover,&.focus{
+        &::before{
+            width: 100%;
+            right: 0;
+            left: 100%; 
+        }
+    }
+    
+
+    &::before {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        display: block;
+        width: 0;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #0a0b2e;
+    }
+}
+.maan-swetch-btn{
+
+        .registration-btn {
+            padding: 0;
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 45px;
+            overflow: hidden;
+            line-height: 45px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #545454;
+            background: #fff;
+            text-align: center;
+            border-radius: 28px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: right;
+            padding-right: 15px;
+            outline: none;
+            box-shadow: none;
+            border: none;
+            &.active {
+                color: #fff;
+                background: #E8004F;
+            }
+        }
+        
+}
+
+.maan-user-account-wraper form {
+	margin-top: 80px;
+    .maan-primary-btn{
+        margin-bottom: 30px;
+        margin-top: 30px;
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        line-height: 29px;
+        background: #E8004F;
+        color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        padding: 20px;
+        font-weight: 600;
+        &:hover{
+            background: #0a0b2e;
+            color: #fff;
+        }
+    }
+    .maan-input-group{
+        position: relative;
+        margin-bottom: 20px;
+        input{
+            width: 100%;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #A2A2A2;
+            padding: 20px 30px;
+            outline: none;
+            box-shadow: none;
+            border-radius: 8px;
+            border: 1px solid #D4D4D4;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        span{
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translate(0, -50%);
+            font-size: 25px;
+            color: #545454;
+        }
+    }
+}
+
+.maan-user-account-wraper form .forget-pass {
+	display: block;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 26px;
+	margin-bottom: 25px;
+	color: #545454;
+    a{
+        color: #e60c5e;
+    }
+}
+
+/*-------------------------------------------------------
+17. Register css 
+---------------------------------------------------------*/
+
+.reg-wpr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    text-align: center;
+    width: 47rem;
+    padding: 4rem 4rem;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+    .header-icon {
+        display: block;
+        margin-bottom: 3rem;
+    }
+    .input-style-2 {
+        height: 5.5rem;
+        border-radius: 4px;
+        &::placeholder {
+            font-size: 1.6rem;
+        }
+    }
+    .login-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .reg-acc {
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.005em;
+        margin-top: 3rem;
+        a {
+            color: var(--clr-def);
+        }
+    }
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 0;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+    margin-top: 0;
+    vertical-align: top;
+    float: inherit;
+    margin-left: -3em;
+}
+
+.rs-ps {
+    margin-top: -7px;
+    display: block;
+    font-size: 1.4rem;
+}
+
+.form-check-label {
+    color: var(--clr-body);
+    margin-left: 1rem;
+}
+
+.register-title {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 0.005em;
+}

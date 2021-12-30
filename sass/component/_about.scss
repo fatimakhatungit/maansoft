@@ -1,0 +1,64 @@
+/* CSS Document */
+
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: -15px;
+    .style-2{
+        margin-top: 0;
+    }
+    h2 {
+        margin-bottom: 3rem;
+    }
+    p {
+        margin-bottom: 3rem;
+    }
+    .btn-6 {
+        align-self: flex-start;
+    }
+}
+.about-right {
+    position: relative;
+    // z-index: 9;
+  }
+.about-right-pic {
+    text-align: center;
+    position: relative;
+    // z-index: 1;
+        .about-1{
+            position: relative;
+            z-index: 9;  
+            box-shadow: 0 10px 30px 0px rgb(185 182 235 / 40%); 
+        }   
+        .about-2{
+            margin-top: -70px;
+            box-shadow: 0 10px 30px 0px rgb(185 182 235 / 40%); 
+        }
+        .about-3{
+            position: absolute;
+            top: -13%;
+            left: 27%;
+            z-index: -7;
+        }
+        .about-4{
+            position: absolute;
+            bottom: -40px;
+            left: 40%;
+            z-index: -6;
+        }
+}
+
+.about-title {
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 0.0025em; 
+    line-height: 3rem;
+}
+
+
+
+.about-left.style-2 {
+    margin-top: 0;
+}

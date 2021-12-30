@@ -1,0 +1,49 @@
+
+/*-------------------------------------------------------
+10. Service css 
+---------------------------------------------------------*/
+
+.service-box {
+    text-align: center;
+    padding: 4rem 3rem;
+    box-shadow: 0px 0px 1px 0px rgba(7, 14, 39, 0.5);
+    transition: all .5s ease;
+    .service-icon {
+        margin-bottom: 3rem;
+    }
+    .service-desc {
+        h5 {
+           margin-bottom: 2rem; 
+        }
+		p {
+			line-height: 2.8rem;
+			letter-spacing: 0.0015em;
+		}
+    }
+    &.active,
+    &:hover {
+        box-shadow: 0px 20px 50px 0px rgba(7, 14, 39, 0.07);
+    }
+}
+
+.service-box-2 {
+	transition: all .5s ease;
+	display: flex;
+	align-items: center;
+	gap: 2.5rem;
+	padding: 4rem 3rem;
+	box-shadow: 0px 0px 1px 0px rgba(7, 14, 39, 0.5);
+    .service-desc {
+        h5 {
+			margin-bottom: 2rem; 
+			margin-bottom: 5px;
+        }
+        p {
+            color: var(--clr-def);
+			font-weight: 500;
+        }
+    }
+	&:hover {
+        box-shadow: 0px 20px 50px 0px rgba(7, 14, 39, 0.07);
+    }
+}

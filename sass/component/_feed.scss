@@ -1,0 +1,89 @@
+/*-------------------------------------------------------
+14. Feedback css 
+---------------------------------------------------------*/
+
+.feed-box {
+    padding: 3rem 5rem;
+    position: relative;
+    z-index: 1;
+	border-radius: 5px;
+    .feed-qoute {
+        position: absolute;
+        content: '';
+        right: 10rem;
+        top: 4.5rem;
+        opacity: .2;
+    }
+    .feed-head {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        .feed-pic {
+            img {
+                height: 7rem;
+                width: 7rem;
+                border-radius: 50%;
+            }
+        }
+        .feed-bio {
+            h5 {
+                margin-bottom: 7px;
+            }
+        }
+    }
+}
+
+//Owl Carousel
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 50px;
+	line-height: 1;
+    // margin-bottom: 6px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 16px;
+    height: 16px;
+    margin: 0px 7px;
+    border: 1px solid var(--clr-def);
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.owl-theme .owl-dots .owl-dot.active span::before,
+.owl-theme .owl-dots .owl-dot:hover span::before {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    content: '';
+    z-index: -1;
+    background: var(--clr-def);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: transparent;
+}
+
+
+//Feed 2
+
+.feed-area {
+	@include fd;
+}
+
+//feed-3
+
+.feed-3 {
+	.feed-box {
+		background-color: var(--clr-white);
+	}
+}

@@ -1,0 +1,215 @@
+
+/*-------------------------------------------------------
+12. Why Choose Us css 
+---------------------------------------------------------*/
+
+.wh-pd  {
+    padding-bottom: 20rem;
+}
+/* maansoft  */
+.wh-area.bg-2 {
+    position: relative;
+}
+.wh-area {
+    position: relative;
+    .icon-dots-2{
+        width: 340px;
+        height: 480px;
+        background-image: url(../maansoft/assets/img/icons/icon-circle-1.png);
+        left: -275px !important;
+         top: 45% !important;
+    }
+    .icon-dots-3 {
+        width: 380px;
+        height: 380px;
+        background-image: url(../maansoft/assets/img/icons/icon-circle-3.png);
+        top: 0px !important;
+        right: -350px !important;
+        left: auto !important;
+        opacity: .50;
+    }
+  }
+  .anim-icons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  
+  .anim-icons .icon {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.wh-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 3rem 2rem;
+    background-color: var(--clr-def);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        z-index: -1;
+        background-color: rgba(0,0,0,.346);
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease;
+        border-radius: 5px;
+    }
+    &:hover::before {
+        opacity: 1;
+        visibility: visible; 
+    }
+    &:first-child {
+        background-color: #4AD395;
+    }
+    &:nth-child(2) {
+        background-color: #f14d5d;
+    }
+    &:nth-child(3) {
+        background-color: #00AAEB;
+    }
+     &:nth-child(4) {
+        background-color: #83B641;
+    }
+    .wh-icon {
+        i {
+            height: 7rem;
+            width: 7rem;
+            line-height: 7rem;
+            text-align: center;
+            background-color: var(--clr-white);
+            display: inline-block;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+    }
+    .wh-desc {
+        h5 {
+            margin-bottom: 1.5rem;
+            color: var(--clr-white);
+        }
+        p {
+           color: var(--clr-white); 
+        }
+    }
+}
+
+.wh-left {
+    padding-right: 7rem;
+    margin-top: -12px;
+    h2 {
+        margin-bottom: 2rem;
+    }
+    p {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.wh-title {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+}
+
+.btn-8 {
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 22px 38px;
+    color: #fff;
+    outline: none;
+    border-radius: var(--rad-1); 
+    display: inline-block;
+    background-color: var(--clr-def);
+    transition: all .5s ease;
+    line-height: 1;
+    &::before {
+        position: absolute;
+        content: '';
+        background-color: var(--clr-black);
+        border: none;
+        height: 0;
+        width: 100%;
+        top: 0;
+        left: 0;
+        -webkit-transition: .5s ease;
+        transition: .5s ease;
+        z-index: -1;
+        visibility: hidden;
+        border-radius: var(--rad-1); 
+    }
+    &:hover::before {
+        height: 102%;
+        visibility: visible;
+        color: var(--clr-white);
+    }
+    &:hover {
+        color: var(--clr-white);
+    }
+}
+
+//Wh 2
+// .wh-area.bg-2 .wh-left.wh-2_1 {
+//     margin-top: 0;
+//   }
+.wp.g-5{
+    --bs-gutter-x: 13rem;
+}
+
+.wh-2_1 {
+    padding-right: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; 
+	p {
+		margin-bottom: 3rem;
+	}
+	a {
+		align-self: flex-start;
+	}
+}
+
+.wh-box-2 {
+	.wh-box {
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		.wh-icon {
+			width: 100%;
+		}
+	}
+}
+
+//Discover 
+.dicover-left {
+    margin-top: -14px;
+}
+.discover-title {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 65px;
+	letter-spacing: 0.0025em;
+	margin-bottom: 6rem;
+   
+}
+

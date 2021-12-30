@@ -1,0 +1,105 @@
+/*-------------------------------------------------------
+24. Career css 
+---------------------------------------------------------*/
+
+.comunity-area {
+	background-size: cover;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.site-title-2 {
+	h2 {
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 65px;
+		letter-spacing: 0.0025em;
+		margin-top: -15px;
+	}
+}
+
+.comunity-box {
+	padding: 3rem;
+	background-color: var(--clr-white);
+	box-shadow: 0px 0px 1px 0px rgba(7, 14, 39, 0.5);
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	transition: all .5s ease;
+	&:hover {
+		box-shadow: 0px 20px 50px rgba(7, 14, 39, 0.1);
+	}
+	.comunity-icon {
+		margin-bottom: 2rem;
+	}
+	.comunity-info {
+		h5 {
+			font-size: 19px;
+			font-weight: 600;
+			line-height: 28px;
+			letter-spacing: 0.0015em;
+		}
+	}
+}
+
+//Be part css
+
+@mixin part-f {
+	display: flex;
+	align-items: center;
+}
+
+.part-single {
+	margin-bottom: 3rem;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	.part-single-content {
+		background-color: var(--clr-bg-2);
+		border-radius: 4px;
+		padding:  2.5rem 1.5rem;
+		ul {
+			display: grid;
+			grid-template-columns: 40rem 1fr 1fr 1fr;
+			align-items: center;
+			li {
+				&:last-child {
+					text-align: right;
+				}
+				.part-icon {
+					@include part-f;
+					gap: 1.5rem;
+				}
+			}
+		}
+	}
+}
+
+.part-single-title {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.ecp-yrr {
+	font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.0015em;
+    border-left: 1px solid rgba(7, 14, 39, 0.1);
+    padding-left: 5rem;
+    display: block;
+ }
+
+.btn-10 {
+	background-color: var(--clr-def);
+	height: 5rem;
+	width: 5rem;
+	line-height: 5rem;
+	text-align: center;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	display: inline-block;
+}
+

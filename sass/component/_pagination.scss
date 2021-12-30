@@ -1,0 +1,31 @@
+
+/*-------------------------------------------------------
+17. Counter css 
+---------------------------------------------------------*/
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 8rem;
+    a {
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        text-align: center;
+        color: var(--clr-heading);
+        font-weight: 600;
+        font-size: 1.6rem;
+        border-radius: 50%;
+        transition: all .5s ease;
+		border: 1px solid var(--clr-def);
+        &:hover {
+            background-color: var(--clr-def);
+            color: var(--clr-white);
+        }
+    }
+}
+
+.cnt {
+    justify-content: center;
+}

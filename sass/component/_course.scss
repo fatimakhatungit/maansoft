@@ -1,0 +1,88 @@
+/*-------------------------------------------------------
+23. Course css 
+---------------------------------------------------------*/
+
+@mixin course-f {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.course-box	{
+	box-shadow: 0px 0px 1px 0px #070E2780;
+	padding: 1.5rem;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	transition: all .5s ease;
+	&:hover {
+		box-shadow: 0px 4px 35px 0px rgba(4, 59, 80, 0.1);
+	}
+}
+
+.course-pic {
+	position: relative;
+	z-index: 1;
+	img {
+		width: 100%;
+	}
+	.course-pic-value {
+		position: absolute;
+		bottom: 3rem;
+		left: 3rem;
+		background: var(--clr-def);
+		border-radius: 2px;
+		padding: 7px 1.5rem;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 15px;
+		letter-spacing: 0.0015em;
+		color: var(--clr-white);
+	}
+}
+
+.course-info {
+	padding: 3rem 3rem 1.5rem 3rem;
+	.course-meta {
+		margin-bottom: 2.2rem;
+		ul {
+			@include course-f;
+			li {
+				.course-meta-bio {
+					display: flex;
+					align-items: center;
+					gap: 7px;
+					h5 {
+						font-size: 16px;
+						font-weight: 500;
+						line-height: 19px;
+						letter-spacing: 0.001em;
+						color: var(--clr-body);
+						margin-bottom: 0;
+					}
+					span {
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 28px;
+						letter-spacing: 0.005em;
+					}
+				}
+			}
+		}
+	}
+	h4 {
+		font-size: 23px;
+		font-weight: 600;
+		line-height: 34px;
+		letter-spacing: 0.0015em;
+	}
+	p {
+		margin-bottom: 2.5rem;
+	}
+	.course-info-rating {
+		@include course-f;
+		border-top: 1px solid rgba(16, 45, 71, .2);
+		padding-top: 2rem;
+
+	}
+}
+

@@ -1,0 +1,241 @@
+/*-------------------------------------------------------
+10. Portfolio css 
+---------------------------------------------------------*/
+
+//.portfolio-area #portfolio-grid {
+//	width: 100%;
+//	margin: -15px 0 0 -15px;
+//}
+//
+//.portfolio-area .pf-item {
+//	width: 33.3333%;
+//	float: left;
+//	padding: 15px;
+//}
+ 
+.portfolio-items-area {
+    overflow: hidden;
+    padding: 15px;
+    margin: -15px -15px 0;
+}
+
+#portfolio-grid {
+	width: 100%;
+    position: inherit!important;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+	grid-auto-rows: auto;
+    grid-gap: 3rem;
+	height: auto!important;
+}
+
+.pf-item {
+    position: inherit!important;
+}
+ 
+
+.masonary {
+	margin-top: 6rem;
+}
+
+.mix-item-menu  { 
+    button {
+        border: none;
+        background: transparent;
+        font-size: 16px;
+        font-weight: 500;
+        position: relative;
+        text-transform: capitalize;
+        cursor: pointer;
+        padding: 15px 24px;
+		line-height: 10px;
+        color: #616161;
+        outline: none; 
+        border-radius: var(--rad-1);
+        &.active {
+            background-color: var(--clr-def);
+            color: var(--clr-white);
+        }
+    }
+}
+
+.work-box {
+    box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.1);
+    padding: 1.5rem;
+    border-radius: 5px;
+    background-color: var(--clr-white);
+	transition: all .5s ease;
+    .work-pic {
+        position: relative;
+        z-index: 1;
+		overflow: hidden;
+        img {
+            width: 100%;
+			border-radius: 5px;
+        }
+		&::before {
+			position: absolute;
+			background-color: rgba(0,0,0,.7);
+			content: '';
+			height: 0%;
+			width: 0%;
+			top: 0;
+			right: 0;
+			transition: .5s ease;
+			z-index: 1;
+			border-radius: 5px;
+		}
+        .work-popup {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) translateY(-20px);
+            height: 6rem;
+            width: 6rem;
+            line-height: 6rem;
+            text-align: center;
+            background-color: var(--clr-white);
+            border-radius: 50%;
+			z-index: 2;
+			transition: all .5s ease;
+			opacity: 0;
+			visibility: hidden;
+        }
+    }
+    .work-desc {
+        padding: 3rem 1.5rem 1.5rem 1.5rem;
+         .work-meta {
+            margin-bottom: 2.9rem;
+        }
+        .work-price {
+            .value {
+                font-family: var(--font-3);
+                font-size: 19px;
+                font-weight: 700;
+                line-height: 10px;
+                letter-spacing: 0.0015em; 
+                color: var(--clr-def-2);
+            }
+        }
+        .work-btns {
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+            }
+        }
+    }
+	&:hover {
+		.work-pic {
+			img {
+				transform: rotate(-4deg) scale(1.2);
+			}
+			&::before {
+				height: 100%;
+				width: 100%;
+			}
+			.work-popup {
+				transform: translate(-55%,-50%) translateY(0);
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.price-rating {
+    gap: 3px;
+    i {
+        font-size: 11px;
+        color: #FF9900;
+    }
+}
+
+.work-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.0015em;
+    margin-bottom: 2.9rem;
+    text-transform: capitalize;
+}
+
+.btn-cart {
+    height: 35px;
+    width: 40px;
+    border-radius: 2px;
+    background-color: var(--clr-def);
+    display: inline-block;
+    text-align: center;
+}
+
+.work-pic {
+    img {
+        border-radius: 5px; 
+    }
+}
+
+//Work 2 
+
+
+.title-button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.site-title {
+		margin-bottom: 0;
+        margin-top: -35px;
+	}
+}
+
+
+.portfolio-2 {
+	.title-button {
+		border-bottom: 1px solid rgba(7, 14, 39, .1);
+		padding-bottom: 3rem;
+		margin-bottom: 6rem;
+		.mix-item-menu {
+			button {
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 30px;
+				letter-spacing: 0.0015em;
+				color: var(--clr-heading);
+				position: relative;
+				z-index: 1;
+				&.active {
+					color: var(--clr-white);
+				}
+				&::before {
+					position: absolute;
+					content: "";
+					z-index: -1;
+					height: 1.5rem;
+					width: 1px;
+					top: 50%;
+					transform: translate(0,-50%);
+					left: 0;
+					background-color: #C4C4C4;
+				}
+				&:first-child::before,
+				&:nth-child(2)::before{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.work-view {
+    line-height: 1;
+}
+
+//LightBox
+
+.mfp-arrow-left {
+    left: 50px;
+}
+
+.mfp-arrow-right {
+    right: 50px;
+}

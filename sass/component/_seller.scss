@@ -1,0 +1,129 @@
+
+/*-------------------------------------------------------
+23. Seller Css
+---------------------------------------------------------*/
+
+.how-wpr {
+    position: relative;
+    z-index: 1;
+    .how-shape {
+        position: absolute;
+        top: 17%;
+        left: 227px;
+        transform: translate(0, -50%);
+        width: 100%;
+        z-index: -1;
+        img {
+            width: 66%;
+        }
+    }
+}
+
+.seller-box {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--clr-bg-2);
+    .seller-pic {
+        margin-bottom: 3rem;
+    }
+    .seller-bio {
+        .seller-title {
+           margin-bottom: 6px;  
+        }
+    }
+}
+
+.seller-title {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.seller-title-sub {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--clr-def);
+}
+
+//How IT Works
+
+.how-box {
+    text-align: center;
+    padding: 0 7rem;
+    .how-icon {
+        margin-bottom: 2.5rem;
+        i {
+            height: 9rem;
+            width: 9rem;
+            line-height: 9rem;
+            text-align: center;
+            display: inline-block;
+            background-color: var(--clr-def);
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+    }
+    .how-info {
+        h4 {
+            font-size: 23px;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: 0.0015em; 
+        }
+    }
+}
+
+//Contact
+
+.ccn-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 65px;
+        letter-spacing: 0.0015em; 
+    }
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 0.0015em;
+        padding-right: 26rem;
+        margin-bottom: 2.5rem;    
+    }
+}
+
+.ccn-contact {
+    box-shadow: 0px 0px 50px 0px rgba(7, 14, 39, 0.1);
+    padding: 7rem;
+    h4 {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.0025em; 
+        margin-bottom: 4rem;
+    }
+}
+
+.ccm {
+    a {
+        color: var(--clr-def);
+    }
+}
+
+.ccn-btn {
+    a {
+        background-color: var(--clr-def-2);
+    }
+}
+
+.ckk .form-check-input[type=checkbox] {
+    border-radius: 0;
+    margin-top: 0;
+    vertical-align: middle;
+    float: inherit;
+    margin-left: 0em;
+}

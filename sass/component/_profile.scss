@@ -1,0 +1,208 @@
+
+/*-------------------------------------------------------
+22. Profile Css
+---------------------------------------------------------*/
+.profile-area.de-padding {
+    position: relative;
+}
+.anim-icons.full-width {
+    max-width: 100%;
+}
+.anim-icons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.profile-area{
+    .icon-circle-1 {
+        position: absolute;
+        left: -70px;
+        bottom: -120px;
+        opacity: .20;
+        z-index: -1;
+    }
+    .icon-circle-1 {
+        width: 400px;
+        height: 400px;
+        background-image: url(../maansoft/assets/img/icons/icon-circle-1.png);
+        background-size: 100%;
+    }
+    .zoominout{
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        width: 80px;
+        height: 80px;
+        background-image: url(../maansoft/assets/img/icons/4.png);
+        background-size: 100%;
+        animation-name: zoomInOut;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-name: zoomInOut;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        -moz-animation-name: zoomInOut;
+        -moz-animation-duration: 3s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: ease-in-out;
+        -ms-animation-name: zoomInOut;
+        -ms-animation-duration: 3s;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-timing-function: ease-in-out;
+        -o-animation-name: zoomInOut;
+        -o-animation-duration: 3s;
+        -o-animation-iteration-count: infinite;
+        -o-animation-timing-function: ease-in-out;
+    }
+} 
+@-webkit-keyframes zoomInOut {
+    0% {
+      -webkit-transform: rotate(0deg) scale(0.7);
+      transform: rotate(0deg) scale(0.7);
+      opacity:0;
+    }
+  
+    50% {
+      -webkit-transform: rotate(180deg) scale(1);
+      transform: rotate(180deg) scale(1);
+      opacity:1;
+    }
+    
+    100% {
+      -webkit-transform: rotate(360deg) scale(0.7);
+      transform: rotate(360deg) scale(0.7);
+      opacity:0;
+    }
+  }
+.enroll-course {
+    padding: 3rem;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+}
+.user-profile {
+    box-shadow: 0px 0px 50px 0px rgba(7, 14, 39, 0.1);
+    padding: 4rem 3rem;
+    text-align: center;
+    .user-profile-bio {
+        margin-top: 3rem;
+        h5 {
+            margin-bottom: 7px;
+        }
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0.005em;
+        }
+    }
+    .profile-list {
+        margin-top: 3rem;
+        ul {
+            li {
+                border-radius: 4px;
+                .profile-opt {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }  
+            }
+        }
+    }
+    .profile-btn {
+        text-align: left;
+        margin-top: 3rem;
+    }
+}
+
+.enroll-single {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1.5rem;
+    background-color: var(--clr-bg-2);
+    margin-bottom: 1.5rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .enroll-pic-info {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        .enroll-bio {
+            h5 {
+                font-size: 19px;
+                font-weight: 600;
+                line-height: 28px;
+                letter-spacing: 0.0015em; 
+                margin-bottom: 1rem;
+            }
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 10px;
+                letter-spacing: 0.0015em;
+            }
+        }
+    }
+    .enroll-price {
+        p {
+            margin-bottom: 1.7rem;
+            color: var(--clr-heading);
+        }
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 10px;
+            letter-spacing: 0.0015em;
+            color: var(--clr-def);
+        }
+		.price-rating {
+			margin-bottom: 5px;
+		}
+    }
+}
+
+
+//Profile Setting
+
+.profile-setting {
+    padding: 5rem 4rem;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+    .pfs-title {
+        margin-bottom: 4rem;
+    }
+}
+
+.pfs {
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.pfs-title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 0.0015em;
+}
+
+.enrolled-title {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 0.0015em; 
+}
+
+
+
+
+
+
+
